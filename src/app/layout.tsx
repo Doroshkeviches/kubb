@@ -63,6 +63,16 @@ export default function RootLayout({
                           canDelete: true,
                         },
                       },
+                      {
+                        name: "pet",
+                        list: "/pet",
+                        create: "/pet/create",
+                        edit: "/pet/edit/:id",
+                        show: "/pet/show/:id",
+                        meta: {
+                          canDelete: true,
+                        },
+                      },
                     ]}
                     options={{
                       syncWithLocation: true,

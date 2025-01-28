@@ -1,21 +1,20 @@
-"use client";
+'use client'
+import { Create, useForm, useSelect } from '@refinedev/antd'
+import { Form, Input, Select } from 'antd'
 
-import { Create, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, Select } from "antd";
-
-export default function BlogPostCreate() {
-  const { formProps, saveButtonProps } = useForm({});
-
+export function LoginUser() {
+  const { formProps, saveButtonProps } = useForm({})
   const { selectProps: categorySelectProps } = useSelect({
-    resource: "categories",
-  });
+    resource: 'user',
+  })
+  const href = '/user/login'
 
   return (
     <Create saveButtonProps={saveButtonProps}>
       <Form {...formProps} layout="vertical">
         <Form.Item
-          label={"Title"}
-          name={["title"]}
+          label={'Title'}
+          name={['title']}
           rules={[
             {
               required: true,
@@ -26,5 +25,5 @@ export default function BlogPostCreate() {
         </Form.Item>
       </Form>
     </Create>
-  );
+  )
 }

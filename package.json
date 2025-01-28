@@ -16,8 +16,8 @@
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
     "@ant-design/nextjs-registry": "^1.0.0",
-    "@kubb/plugin-oas": "^3.5.0",
-    "@kubb/react": "^3.5.0",
+    "@kubb/plugin-oas": "latest",
+    "@kubb/react": "latest",
     "@refinedev/antd": "^5.44.0",
     "@refinedev/cli": "^2.16.21",
     "@refinedev/core": "^4.47.1",
@@ -27,13 +27,13 @@
     "@refinedev/simple-rest": "^5.0.1",
     "antd": "^5.17.0",
     "js-cookie": "^3.0.5",
-    "kubb": "^3.0.29",
+    "kubb": "latest",
     "next": "^14.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@kubb/plugin-client": "^3.5.0",
+    "@kubb/plugin-client": "latest",
     "@types/js-cookie": "^3.0.6",
     "@types/node": "^18.16.2",
     "@types/react": "^18.0.0",

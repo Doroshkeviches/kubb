@@ -11,7 +11,6 @@ export default defineConfig(() => {
     input: {
       path: './swagger.json',
     },
-
     output: {
       path: './src/gen',
       clean: true,
@@ -33,8 +32,15 @@ export default defineConfig(() => {
       // pluginRefine()
       pluginOas({
         output: {
-          path: '../app/gen',
+          path: '../app',
         },
+        group: {
+          type: 'tag',
+          name({ group }){
+            return `${group}`
+          }
+        },
+        
         validate: false,
         generators: [example2],
       }),

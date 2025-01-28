@@ -105,7 +105,7 @@
                 ],
                 "summary": "Add a new pet to the store",
                 "description": "",
-                "operationId": "addPet",
+                "operationId": "createPet",
                 "consumes": [
                     "application/json",
                     "application/xml"
